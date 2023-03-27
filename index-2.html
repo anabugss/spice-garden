@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7f445e6714.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Spice Garden</title>
+</head>
+<body>
+    <div class="nav-top nav-scroller px-1 py-1">
+        <nav class="nav d-flex justify-content-end align-items-center" style="font-size: 12px;">
+            <ul class="nav" >
+                <li class="nav-item">
+                    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                        <a class="nav-link fs-5" href="#" role="button">
+                            SIGN UP/LOG IN
+                        </a>
+                    </button>
+                    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginFormLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <span aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="nav-sign-in d-flex justify-content-between p-3" style="background-color: #FDF2E9;">
+                                        <input type="email" class="form-control" placeholder="Your Email" label="search" style="border-radius: 4px 0px 0px 4px; border: none; width: 100%;">
+                                        <i class="fas fa-envelope prefix grey-text fs-4 p-2" style="border-radius: 0px 4px 4px 0px; text-decoration: none;"></i>
+                                    </div>
+                                    <div class="nav-sign-in d-flex justify-content-between p-3" style="background-color: #FDF2E9;">
+                                        <input type="email" class="form-control" placeholder="Your Password" label="search" style="border-radius: 4px 0px 0px 4px; border: none; width: 100%;">
+                                        <i class="fas fa-lock prefix grey-text fs-4 p-2" style="border-radius: 0px 4px 4px 0px; text-decoration: none;"></i>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="footer-log-in container-fluid d-flex justify-content-center" style="border-bottom: none;">
+                                        <button class="btn">Login</button>
+                                    </div>
+                                    <span class="fs-6 text-dark">No account yet? 
+                                    <a href="sign-up-form.html">Sign up</a> instead.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-cart-shopping fs-5" style="margin-top: 10px; margin-right: 10px;"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="website-header">
+        <div class="d-flex justify-content-center align-items-center text-light ps-2">
+            <img class="w-50 p-1" src="assets/images/logo-bg/spice-garden-no-bg.png">
+        </div>
+    </header>
+    <div class="nav-scroller px-1 py-1 mb-1 mt-3">
+        <nav class="nav d-flex justify-content-center align-items-center fs-6">
+            <ul class="nav" >
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">All Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="all-spices.html">Herbs and Spices</a></li>
+                        <li><a class="dropdown-item" href="index-4.html">Storages</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Partner Sites
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="https://www.yummly.com/">
+                                Recipes
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.plant-world-seeds.com/store/vegetable_seeds/herb_seeds">
+                                Seeds for Planting
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.frontiercoop.com/community/guides/how-to-store-spices#:~:text=Amber%20glass%20jars%20with%20airtight,light%20and%20handle%20them%20thoughtfully.">
+                                Proper Storage
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.everydayhealth.com/">
+                                Health Topics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://caff.org/farms/category/herbs-spices/">
+                                People
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid" style="font-family: 'Red Hat Display', sans-serif; border-bottom:none; text-align: justify; margin-top: 50px;">
+        <div class="row top-description d-flex justify-content-center align-items-center" style="padding: 15px">
+            <div class="col">
+                <div>
+                    <h5>USING HERBS AND SPICES</h3>
+                </div>
+                <div>
+                    <span>
+                        Although spices and herbs have been used since ancient times, they are playing a new and important role in modern food preparation.  They not only add unique flavors to our food, but contribute color and variety as well.  Certain spices and herbs used alone, or in blends, can replace or reduce salt and sugar in foods. 
+                    </span>
+                </div>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/logo-bg/spices-image-1.jpg" class="description-image">
+            </div>
+        </div>
+        <div class="row top-description d-flex justify-content-center align-items-center" style="padding: 15px">
+            <div class="col text-center">
+                <img src="assets/images/logo-bg/spices-image-2.jpg" class="description-image">
+            </div>
+            <div class="col">
+                <h5>What are spices and herbs?</h3>
+                <p>
+                    Many people use the terms interchangeably to mean any product of plant origin used primarily for seasoning food.  Technically, herbs come from aromatic plants grown in the temperate zone, while spices are products of tropical plants.  Usually, the leaves of herbs are used; whereas, spices may come from the bark, berries, flower buds, roots, or seeds. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex mt-5">
+        <ul class="nav nav-tabs text-secondary fs-6">
+            <li class="nav-item">
+              <a class="nav-link text-secondary border-secondary"  href="index.html">Dried Herbs and Spices</a>
+            </li>
+            <li class="nav-item ps-1">
+              <a class="nav-link active text-bg-secondary border-secondary" aria-current="page" href="index-2.html">Fresh Herbs and Spices</a>
+            </li>
+            <li class="nav-item ps-1">
+              <a class="nav-link text-secondary border-secondary" href="index-3.html">Spice Blends, Rubs, and Mixes</a>
+            </li>
+            <li class="nav-item ps-1">
+              <a class="nav-link text-secondary border-secondary" href="index-4.html">Storages</a>
+            </li>
+          </ul>
+    </div>
+    <div class="nav-search d-flex justify-content-end p-3" style="background-color: #FDF2E9;">
+        <input type="search" class="form-control w-25" placeholder="Search" label="search" style="border-radius: 4px 0px 0px 4px; border: none;">
+        <button id="search-button" type="button" class="btn btn-light" style="border-radius: 0px 4px 4px 0px;">
+            <i class="fa-solid fa-magnifying-glass fs-4 p-2"></i>
+        </button>
+    </div>
+    <div class="section-card-info">
+        <section class="d-flex justify-content-center align-items-center" style="background-color: #FDF2E9;">
+            <div class="section-image">
+                <img src="assets/images/logo-bg/spices-bg-2-no-bg.png">
+            </div>
+            <h3 class="section-text" style="font-family: 'Red Hat Display', sans-serif; padding: 0px 15px 0px 15px; text-align: center;">
+                There’s nothing better that throwing a sprig or two of a fresh herb into a recipe to instantly ratchet up the flavor and the appearance of the dish.
+            </h3>
+        </section> 
+    </div>
+    <div class="cards py-5" style="background-color: #FDF2E9;">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-6 row-cols-large-4 g-3">
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/basil-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Basil
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#basilModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="basilModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="basilModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                BASIL
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/basil-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/basil-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/basil-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Basil, Ocimum basilicum, is an annual kitchen herb in the Lamiaceae (mint) family originally from the tropical areas of central Africa through to Southeast Asia.
+                                                        </p>
+                                                        <p>
+                                                            Basil is best used fresh for its tantalizing fragrance and bright spicy taste – a fresh, green flavor of sweet anise and cinnamon with notes of cloves in the Asian varieties.
+                                                        </p>
+                                                        <p>
+                                                            Several cultivars have culinary uses from sweet, Genovese basil to Thai and lemon varieties.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Basil" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=basil&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/chervil-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Chervil
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#chervilModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="chervilModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="chervilModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                CHERVIL
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/chervil-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/chervil-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/chervil-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Chervil, Anthriscus cerefolium, is a tender, flowering annual herb in the Apiaceae (carrots, celery, and parsley) family native to the Caucasus, with a mild, licorice-like flavor similar to basil or tarragon.
+                                                        </p>
+                                                        <p>
+                                                            Chervil is commonly used in French cuisine to season mild-flavored dishes such as eggs, fish, poultry, salads, seafood, soups, spring vegetables, and vinaigrettes. It’s also a main component in the French blend “Fines Herbes .”
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Chervil" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=CHERVIL&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/chives-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Chives
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#chivesModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="chivesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="chivesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content" style="background-color: #8aac91";>
+                                        <div class="modal-header" style="background-color: #8aac91";>
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                CHIVES
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/chives-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/chives-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/chives-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Chives, Allium schoenoprasum, are a bulb-forming perennial in the Allium (onion) genus native to much of Asia, Europe, and North America that is used for its mild, onion-like flavor with hints of garlic.
+                                                        </p>
+                                                        <p>
+                                                            Popular in several global cuisines, both flowers and scapes (leaves) are edible.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Chives" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=CHIVES&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/cilantro-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Cilantro
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#cilantroModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="cilantroModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cilantroModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                CILANTRO
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/cilantro-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/cilantro-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/cilantro-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Cilantro leaves come from the coriander plant, Coriandrum sativum, an annual herb in the Apiaceae family native to Iran.
+                                                        </p>
+                                                        <p>
+                                                            The leaves and stems have a sharp herbaceous flavor with notes of lemon and lime.
+                                                        </p>
+                                                        <p>
+                                                            Used in Asian, Caribbean, Latin American, and Mexican cooking cilantro flavors chutneys, dal, guacamole, salsa, salads, and soups and is best used fresh for peak flavor.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Coriander" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=CILANTRO&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/curry-leaves-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Curry Leaves
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#curryLeavesModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="curryLeavesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="curryLeavesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                CURRY LEAVES
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/curry-leaves-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/curry-leaves-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/curry-leaves-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Curry leaves, or sweet neem leaves, come from the curry tree, Murraya koenigii, which belongs to the family Rutaceae (rue) and is native to subtropical regions of India and Sri Lanka.
+                                                        </p>
+                                                        <p>
+                                                            The pungent leaves aren’t related to curry powder, but they give a similar flavor – warm, spicy, and herbal with distinct citrus notes.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Curry_tree" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=CURRY+LEAVES&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/dill-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Dill Weed
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#dillModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="dillModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dillModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                DILL WEED
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/dill-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/dill-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/dill-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Dill, Anethum graveolens, is an annual, flowering herb and yet another member in the family Apiaceae.
+                                                        <p>
+                                                            Native to broad areas of Eurasia, dill is used for its strong, unique taste – a warm combination of fennel and celery, with a slightly bitter aftertaste.
+                                                        </p>
+                                                        <p>
+                                                            Dill is used extensively in the cuisines of Baltic and Eastern Europe, India, the Middle East, Scandinavian countries, and Southeast Asia to flavor borscht, canapes, compound butters, eggs, fish, pickles, sauces, soup, spreads and vegetables.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Dill" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=Dill&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center" >
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/fenugreek-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Fenugreek
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#fenugreekModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="fenugreekModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="fenugreekModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                FENUGREEK
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/fenugreek-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/fenugreek-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/fenugreek-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Fenugreek, Trigonella foenum-graecum, is an annual in the Fabaceae (legume) family thought to originate in the Levant and is used for it sweet and nutty flavor with notes of maple syrup.
+                                                        </p>
+                                                        <p>
+                                                            Commonly used in cuisines of south Asian, the Indian subcontinent, and the Middle East, fresh fenugreek is used to season curries, dal, garbanzos, pickles, potatoes, stews, and tomato sauce.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Fenugreek" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=fenugreek&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/lemon-grass-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Lemon Grass
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#lemonGrassModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="lemonGrassModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lemonGrassModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                LEMON GRASS
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lemon-grass-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lemon-grass-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lemon-grass-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Lemon grass is native to and often found in the cuisines of Thailand, India, and Myanmar.
+                                                        </p>
+                                                        <p>
+                                                            It has a citrus flavor similar to its namesake and can be used fresh or dried and powdered.
+                                                        </p>
+                                                        <p>
+                                                            It’s also used for medical purposes in India and as tea in Latin America and in eastern African countries such as Ghana, Congo, and Togo.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Cymbopogon" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=LEMON+GRASS&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/lemon-thyme-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Lemon Thyme
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#lemonThymeModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="lemonThymeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lemonThymeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                LEMON THYME
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lemon-thyme-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lemon-thyme-2.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lemon-thyme-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Lemon thyme, Thymus citriodorus, is a clumping perennial species in the Thymus genus, and is native to temperate areas of Asia, Europe, and North Africa for its sweet flavor of lemon and thyme.
+                                                        </p>
+                                                        <p>
+                                                            Its herbal, citrusy flavor makes lemon thyme an excellent seasoning for fish and seafood, herbal teas, marinades, poultry, sauces, soups, stews, stuffing, vegetables, and vinaigrettes and it also makes an aromatic garnish.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Celery#Seeds" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=CELERY+SEEDS&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/lovage-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Lovage
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#lovageModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="lovageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="lovageModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                LOVAGE
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lovage-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lovage-3.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/lovage-2.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Lovage, Levisticum officinale, is a leafy perennial in the family Apiaceae and is native to southern Europe and Southwest Asia.
+                                                        </p>
+                                                        <p>
+                                                            Similar in appearance to celery, its flavor is deep and earthy, an intense cross of celery and parsley.
+                                                        </p>
+                                                        <p>
+                                                            Popular in south and central European cooking, fresh lovage leaves are used as an herb to flavor fish, meat, pasta, poultry, rice, sauces, and vegetables. Use young tender leaves to add fresh, older leaves should season cooked dishes.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Lovage" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=Lovage&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center" style="font-family: 'Red Hat Display', sans-serif; font-weight: 800;">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/marjoram-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Marjoram
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#chiliModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="chiliModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="chiliModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="font-family: 'Noto Serif', serif; font-weight: 900;">
+                                                MARJORAM
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/marjoram-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/marjoram-3.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/marjoram-2.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Marjoram, Origanum majorana, is a cold-tender perennial herb in Lamiaceae family native to temperate Asia, Europe, North Africa, and parts of North America and has a flora, woodsy flavor of sweet pine and citrus.
+                                                        </p>
+                                                        <p>
+                                                            Fresh marjoram is widely used in Mediterranean and North American cooking to season game, marinades, meat, poultry, sauces, sausages, soups, stews, tomato dishes, vegetables, and vinaigrettes.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Marjoram" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=MARJORAM&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/fresh-herbs-and-spices/mint-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Mint
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#mintModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="mintModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mintModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                MINT
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/fresh-herbs-and-spices/mint-1.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/mint-3.png">
+                                                    <img src="assets/images/fresh-herbs-and-spices/mint-2.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Mint is one of several species in the genus Mentha of the Lamiaceae (mint!) family and is native to Asia, Australia, Africa, Europe, and North America.
+                                                        </p>
+                                                        <p>
+                                                            Spearmint and peppermint are common garden and grocery store varieties, and both feature a clean, sweet flavor with tones of eucalyptus and a distinct cooling sensation – peppermint having a sharper, more pungent taste than its parent, spearmint.
+                                                        </p>
+                                                        <div class="d-flex justify-content-center align-items-center m-2" style="background-color: none;">
+                                                            <a href="https://en.wikipedia.org/wiki/Mint" type="button" class="btn me-2">
+                                                                READ MORE
+                                                            </a>
+                                                            <a href="https://www.yummly.com/recipes?q=Mint&taste-pref-appended=true" type="button" class="btn me-2">
+                                                                RELATED RECIPES
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <pfont-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>TYPE</p>
+                                                        <select class="w-100"id="type" name="type">
+                                                            <option disabled selected>Seed</option>
+                                                            <option value="powdered">Powdered</option>
+                                                            <option value="paste">Paste</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>CONTAINER</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>Mason Jar (Rounded)</option>
+                                                            <option value="masonJarSquared">Mason Jar (Squared)</option>
+                                                            <option value="regularjarSquared">Regular Jar (Squared)</option>
+                                                            <option value="regularjarRounded">Regular Jar (Rounded)</option>
+                                                            <option value="pouch">Pouch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>250 g, 8.81 oz</option>
+                                                            <option value="500g">500 g, 17.63 oz</option>
+                                                            <option value="750g">750 g, 26.45 oz</option>
+                                                            <option value="1000g">1000 g, 35.27 oz</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"></div>
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bottom d-flex justify-content-evenly align-items-center pt-4 pb-2">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link text-bg-secondary" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link text-secondary" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link text-secondary" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link text-secondary" href="#">...</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link text-secondary" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="d-flex justify-content-evenly p-5">
+        <div class="cs-bottom">
+            <h4 class="fw-bold">Contact Us:</h4>
+            <p>E-mail: cs@spicegarden.com</p>
+            <p>Contact Numbers: +639990001111 | +639992223333</p>
+            <p>E-mail: cs@spicegarden.com</p>
+            <div class="cs-icons fs-3">
+                <i class="fa-brands fa-instagram pe-3"></i>
+                <i class="fa-brands fa-facebook-f pe-3"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.212161872405!2d77.70428821630352!3d12.958271589485891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b6ca166d8f%3A0x789e9c5f5b93a637!2sSpice%20Garden%2C%20Bangalore!5e0!3m2!1sen!2sph!4v1679474339456!5m2!1sen!2sph" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-bottom" style="background-image: url(assets/images/logo-bg/leaves-bg.jpg);">
+        <footer class="p-4">
+            <div class="row text-dark">
+                <div class="col-6 col-md-2">
+                    <h5 class="fw-bold">COMPANY</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Careers</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Terms</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Privacy</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Interest Based Ads</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Ad Preferences</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-2">
+                    <h5 class="fw-bold">WORK WITH US</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Become an Affiliate</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Become a Reseller</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Become a Distributor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-2">
+                    <form>
+                        <h5 class="fw-bold">Let's get in touch!</h5>
+                        <p>For updates, offers and exciting news. </p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="subscription" class="visually-hidden">E-mail Address</label>
+                            <input id="subscription" type="text" class="form-control" placeholder="E-mail Address">
+                            <button class="btn btn-secondary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="d-flex justify-content-center mt-2 text-center">
+        <p style="font-family: 'Noto Serif', serif;">
+            All rights reserved. | AKBUGCAT
+        </p>
+    </div>
+        <!-- <div class="d-flex justify-content-center">
+        <img src="assets/images/image7.jpg" class="w-100 h-50">
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

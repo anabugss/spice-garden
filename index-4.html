@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7f445e6714.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Spice Garden</title>
+</head>
+<body>
+    <div class="nav-top nav-scroller px-1 py-1">
+        <nav class="nav d-flex justify-content-end align-items-center" style="font-size: 12px;">
+            <ul class="nav" >
+                <li class="nav-item">
+                    <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+                        <a class="nav-link fs-5" href="#" role="button">
+                            SIGN UP/LOG IN
+                        </a>
+                    </button>
+                    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginFormLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <span aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <div class="nav-sign-in d-flex justify-content-between p-3" style="background-color: #FDF2E9;">
+                                        <input type="email" class="form-control" placeholder="Your Email" label="search" style="border-radius: 4px 0px 0px 4px; border: none; width: 100%;">
+                                        <i class="fas fa-envelope prefix grey-text fs-4 p-2" style="border-radius: 0px 4px 4px 0px; text-decoration: none;"></i>
+                                    </div>
+                                    <div class="nav-sign-in d-flex justify-content-between p-3" style="background-color: #FDF2E9;">
+                                        <input type="email" class="form-control" placeholder="Your Password" label="search" style="border-radius: 4px 0px 0px 4px; border: none; width: 100%;">
+                                        <i class="fas fa-lock prefix grey-text fs-4 p-2" style="border-radius: 0px 4px 4px 0px; text-decoration: none;"></i>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="footer-log-in container-fluid d-flex justify-content-center" style="border-bottom: none;">
+                                        <button class="btn">Login</button>
+                                    </div>
+                                    <span class="fs-6 text-dark">No account yet? 
+                                    <a href="sign-up-form.html">Sign up</a> instead.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-cart-shopping fs-5" style="margin-top: 10px; margin-right: 10px;"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header class="website-header">
+        <div class="d-flex justify-content-center align-items-center text-light ps-2">
+            <img class="w-50 p-1" src="assets/images/logo-bg/spice-garden-no-bg.png">
+        </div>
+    </header>
+    <div class="nav-scroller px-1 py-1 mb-1 mt-3">
+        <nav class="nav d-flex justify-content-center align-items-center fs-6">
+            <ul class="nav" >
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" aria-current="page" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" aria-current="page" href="#">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        All Products
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="all-spices.html">
+                                Herbs and Spices</a>
+                            </li>
+                        <li>
+                            <a class="dropdown-item" href="index-4.html">
+                                Storages
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Partner Sites
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="https://www.yummly.com/">
+                                Recipes
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.plant-world-seeds.com/store/vegetable_seeds/herb_seeds">
+                                Seeds for Planting
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.frontiercoop.com/community/guides/how-to-store-spices#:~:text=Amber%20glass%20jars%20with%20airtight,light%20and%20handle%20them%20thoughtfully.">
+                                Proper Storage
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://www.everydayhealth.com/">
+                                Health Topics
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://caff.org/farms/category/herbs-spices/">
+                                People
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid" style="font-family: 'Red Hat Display', sans-serif; border-bottom:none; text-align: justify; margin-top: 50px;">
+        <div class="row top-description d-flex justify-content-center align-items-center" style="padding: 15px">
+            <div class="col">
+                <div>
+                    <h5>USING HERBS AND SPICES</h3>
+                </div>
+                <div>
+                    <span>
+                        Although spices and herbs have been used since ancient times, they are playing a new and important role in modern food preparation.  They not only add unique flavors to our food, but contribute color and variety as well.  Certain spices and herbs used alone, or in blends, can replace or reduce salt and sugar in foods. 
+                    </span>
+                </div>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/logo-bg/spices-image-1.jpg" class="description-image">
+            </div>
+        </div>
+        <div class="row top-description d-flex justify-content-center align-items-center" style="padding: 15px">
+            <div class="col text-center">
+                <img src="assets/images/logo-bg/spices-image-2.jpg" class="description-image">
+            </div>
+            <div class="col">
+                <h5>What are spices and herbs?</h3>
+                <p>
+                    Many people use the terms interchangeably to mean any product of plant origin used primarily for seasoning food.  Technically, herbs come from aromatic plants grown in the temperate zone, while spices are products of tropical plants.  Usually, the leaves of herbs are used; whereas, spices may come from the bark, berries, flower buds, roots, or seeds. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex mt-5">
+        <ul class="nav nav-tabs text-secondary fs-6">
+            <li class="nav-item">
+              <a class="nav-link text-secondary border-secondary"  href="index.html">Dried Herbs and Spices</a>
+            </li>
+            <li class="nav-item ps-1">
+                <a class="nav-link text-secondary border-secondary"  href="index-2.html">Fresh Herbs and Spices</a>
+            </li>
+            <li class="nav-item ps-1">
+                <a class="nav-link text-secondary border-secondary"  href="index-3.html">Spice Blends, Rubs, and Mixes</a>
+            </li>
+            <li class="nav-item ps-1">
+                <a class="nav-link active text-bg-secondary border-secondary" aria-current="page" href="index-4.html">Storages</a>
+            </li>
+          </ul>
+    </div>
+    <div class="nav-search d-flex justify-content-end p-3" style="background-color: #FDF2E9;">
+        <input type="search" class="form-control w-25" placeholder="Search" label="search" style="border-radius: 4px 0px 0px 4px; border: none;">
+        <button id="search-button" type="button" class="btn btn-light" style="border-radius: 0px 4px 4px 0px;">
+            <i class="fa-solid fa-magnifying-glass fs-4 p-2"></i>
+        </button>
+    </div>
+    <div class="section-card-info">
+        <section class="d-flex justify-content-center align-items-center" style="background-color: #FDF2E9;">
+            <div class="section-image">
+                <img src="assets/images/logo-bg/spices-bg-2-no-bg.png">
+            </div>
+            <h3 class="section-text" style="font-family: 'Red Hat Display', sans-serif; padding: 0px 15px 0px 15px; text-align: center;">
+                Spices and seasonings add a pop of flavor to your favorite dishes, but only when they’re kept fresh. Here are the available storages we have for you!
+            </h3>
+        </section> 
+    </div>
+    <div class="cards py-2" style="background-color: #FDF2E9;">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-6 row-cols-large-4 g-3">
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/storage/clip-top-jar-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h2 class="card-title">
+                                Clip Top Jars
+                            </h2>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#clipTopJarsModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="clipTopJarsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="clipTopJarsModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel"">
+                                                CLIP TOP JARS
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/storage/clip-top-jar-1.png">
+                                                    <img src="assets/images/storage/clip-top-jar-2.png">
+                                                    <img src="assets/images/storage/clip-top-jar-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Our pantry staples have a new home in these classic clip-top Kilner jars. Each one has an airtight seal to make sure whatever’s inside lasts and lasts. Plus, thanks to that sturdy glass, you’re getting a crystal-clear view of exactly how much flour—or sugar or rice or pasta—is left. Their rounded square shape makes ‘em total pros at maximizing storage space (go ahead and stack smaller jars right on top of the larger ones). Oh, and they also happen to be a cinch to pluck from a shelf. Did we mention these go-getters are great for preserving jams and chutneys, too? Of course they are.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>QUANTITY</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>1 pc</option>
+                                                            <option value="masonJarSquared"> Set of 3</option>
+                                                            <option value="regularjarSquared">Set of 6</option>
+                                                            <option value="regularjarRounded">Set of 12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>17 oz, 4.25" D (at base) x 5.70" W (including clip) x 4.30" H</option>
+                                                            <option value="34oz">34 oz, 4.25" D (at base) x 5.70" W (including clip) x 7.00" H</option>
+                                                            <option value="51oz">51 oz, 4.50" D (at base) x 5.70" W (including clip) x 9.00" H</option>
+                                                            <option value="68oz">68 oz,4.75" D (at base) x 5.70" W (including clip) x 10.25" H</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/storage/glass-jars-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h6 class="card-title fs-6">
+                                Glass Jars with Hand-Turned Wooden Lids
+                            </h6>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#glassJarModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="glassJarModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="glassJarModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title fs-5" id="staticBackdropLabel"">
+                                                Glass Jars with Hand-Turned Wooden Lids
+                                            </h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/storage/glass-jars-1.png">
+                                                    <img src="assets/images/storage/glass-jars-2.png">
+                                                    <img src="assets/images/storage/glass-jars-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Your food storage game just got a big upgrade. We can think of about a zillion uses for these airtight lidded jars, especially because they come in a slew of sizes (16 ounces up to a gallon, take your pick!). In the kitchen, we’re using the smallest one to keep our ground coffee fresh, plus the larger ones to store beans and rice. And in the bathroom? Our cotton balls and Epsom salt have never looked smarter, thanks to those eye-catching lids. Fill one up with preserves and give it as a hosting gift—we promise it’ll be more memorable than a bottle of wine.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>QUANTITY</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>1 pc</option>
+                                                            <option value="masonJarSquared"> Set of 3</option>
+                                                            <option value="regularjarSquared">Set of 6</option>
+                                                            <option value="regularjarRounded">Set of 12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>16 oz. 5.5" H x 3" W</option>
+                                                            <option value="32oz">32 oz. 7" H x 4" W</option>
+                                                            <option value="64oz">64 oz. 9" H x 5" W, 2.75" jar opening</option>
+                                                            <option value="128oz">128 oz. 10.25" H x 6" W, 4.00" jar opening</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/storage/pss-jars-1.jpg">
+                        </div>
+                        <div class="card-body p-1">
+                            <h6 class="card-title fs-6">
+                                Preserve, Store & Serve Jars
+                            </h6>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#glassJarModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="glassJarModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="glassJarModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title fs-5" id="staticBackdropLabel"">
+                                                Preserve, Store & Serve Jars
+                                            </h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/storage/pss-jars-1.jpg">
+                                                    <img src="assets/images/storage/pss-jars-2.jpg">
+                                                    <img src="assets/images/storage/pss-jars-3.jpg">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            The swing-top lids have rubber gaskets to keep things nice and airtight, plus—plot twist—you can remove them entirely if you please. (That means these double as serving dishes and are blessedly easy to clean). Did we mention they are freezer friendly too? Bring on the pickles, sauerkraut, jams, and to-go salads.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>QUANTITY</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>1 pc</option>
+                                                            <option value="masonJarSquared"> Set of 3</option>
+                                                            <option value="regularjarSquared">Set of 6</option>
+                                                            <option value="regularjarRounded">Set of 12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>16 oz. 5.5" H x 3" W</option>
+                                                            <option value="32oz">32 oz. 7" H x 4" W</option>
+                                                            <option value="64oz">64 oz. 9" H x 5" W, 2.75" jar opening</option>
+                                                            <option value="128oz">128 oz. 10.25" H x 6" W, 4.00" jar opening</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/storage/vintage-jars-1.jpg">
+                        </div>
+                        <div class="card-body p-1">
+                            <h6 class="card-title fs-6">
+                                Vintage Jar (1 size)
+                            </h6>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#vintageJarModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="vintageJarModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="vintageJarModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title fs-5" id="staticBackdropLabel"">
+                                                Preserve, Store & Serve Jars
+                                            </h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/storage/vintage-jars-1.jpg">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            Leave it to these vintage-inspired preserving jars to keep that summer bounty going for a whole lot longer. At 1/4 liter or about a cup each, they’re ready for all the canning work you can throw at them—sanitizing, submerging, sealing...the works. Oh, and let’s talk about those two-piece lids: Each one has a replaceable vacuum seal along with a metal screw band you can use up to 10 times. And after all that preserving? Let them do double duty storing your custom spice blends, pantry staples, sky’s the limit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>QUANTITY</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>1 pc</option>
+                                                            <!-- <option value="masonJarSquared"> Set of 3</option>
+                                                            <option value="regularjarSquared">Set of 6</option>
+                                                            <option value="regularjarRounded">Set of 12</option> -->
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected>3.50" D x 3.50" H; Holds 8.50 oz (just over one cup)</option>
+                                                            <!-- <option value="32oz">32 oz. 7" H x 4" W</option>
+                                                            <option value="64oz">64 oz. 9" H x 5" W, 2.75" jar opening</option>
+                                                            <option value="128oz">128 oz. 10.25" H x 6" W, 4.00" jar opening</option> -->
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-5 d-flex align-items-center">
+                        <div class="card-image">
+                            <img src="assets/images/storage/artisan-glass-jar-1.png">
+                        </div>
+                        <div class="card-body p-1">
+                            <h6 class="card-title fs-6">
+                                Artisan Glass Jars
+                            </h6>
+                        </div>
+                        <div class="d-flex align-items-center">
+            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#stackJarModal">
+                                <a href="#" type="button" class="btn">
+                                    CHECK NOW
+                                </a>
+                            </button>
+  
+                            <!-- Modal -->
+                            <div class="modal fade" id="stackJarModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="stackJarModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-xl-down modal-fullscreen-lg-down modal-fullscreen-md-down">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title fs-5" id="staticBackdropLabel"">
+                                                Artisan Glass Jars
+                                            </h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row modal-image d-flex justify-content-evenly">
+                                                    <img src="assets/images/storage/artisan-glass-jar-1.png">
+                                                    <img src="assets/images/storage/artisan-glass-jar-2.png">
+                                                    <img src="assets/images/storage/artisan-glass-jar-3.png">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="modal-text col-md-auto ms-auto">
+                                                        <p>
+                                                            The delicious flavors of our kitchen rest on our herbs and spices, yet these are often left in a jumble and disarray, or in half-open containers that aren't suitably designed for frequent cooking activity and best food storage. Create organized Zen in your cooking space with our Marrakech Artisan Acacia spice jars - modern, artisanal and highly functional - they will surely bring out the Barefoot Contessa in you while keeping your Spice Rack stylishly neat and organized.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2 pb-1" style="border-top: 1px solid #FB7C55;">
+                                                    <p style="font-weight: 900; font-size: 20px;">SHOP HERE!</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p>QUANTITY</p>
+                                                        <select class="w-100" id="container" name="container">
+                                                            <option disabled selected>1 pc</option>
+                                                            <option value="masonJarSquared"> Set of 3</option>
+                                                            <option value="regularjarSquared">Set of 6</option>
+                                                            <option value="regularjarRounded">Set of 12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col">
+                                                        <p>SIZES</p>
+                                                        <select class="w-100"id="sizes" name="sizes">
+                                                            <option disabled selected> 120mL (4oz.)</option>
+                                                            <!-- <option value="32oz">32 oz. 7" H x 4" W</option>
+                                                            <option value="64oz">Push Top Jars (6.9" L x 6.9" D X 12.6" H)</option> -->
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col modal-quantity  pt-2 pb-2">
+                                                        <form class="d-flex justify-content-center">
+                                                            <label for="quantity">Quantity (1-20):</label>
+                                                            <input type="number" id="quantity" name="quantity" min="1" max="20" style="width: 100px; margin-left: 5px; text-align: center;">
+                                                        </form>
+                                                    </div>
+                                                    <div class="col d-flex justify-content-center pt-2 pb-2">
+                                                        <p style="font-weight: 800; font-size: 18px;">Total Price: $$$.$$</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="d-flex justify-content-between align-items-center" style="background-color: none;">
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO CART
+                                                </a>
+                                                <a href="#" type="button" class="btn me-2">
+                                                    ADD TO FAVORITES
+                                                </a>
+                                                <a href="check-out-form.html" type="button" class="btn">
+                                                    BUY NOW
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bottom d-flex justify-content-evenly align-items-center pt-4 pb-2">
+        <ul class="pagination">
+            <li class="page-item active" aria-current="page">
+                <a class="page-link text-bg-secondary" href="#">1</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="d-flex justify-content-evenly p-5">
+        <div class="cs-bottom">
+            <h4 class="fw-bold">Contact Us:</h4>
+            <p>E-mail: cs@spicegarden.com</p>
+            <p>Contact Numbers: +639990001111 | +639992223333</p>
+            <p>E-mail: cs@spicegarden.com</p>
+            <div class="cs-icons fs-3">
+                <i class="fa-brands fa-instagram pe-3"></i>
+                <i class="fa-brands fa-facebook-f pe-3"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.212161872405!2d77.70428821630352!3d12.958271589485891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13b6ca166d8f%3A0x789e9c5f5b93a637!2sSpice%20Garden%2C%20Bangalore!5e0!3m2!1sen!2sph!4v1679474339456!5m2!1sen!2sph" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-bottom" style="background-image: url(assets/images/logo-bg/leaves-bg.jpg);">
+        <footer class="p-4">
+            <div class="row text-dark">
+                <div class="col-6 col-md-2">
+                    <h5 class="fw-bold">COMPANY</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Careers</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Terms</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Privacy</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Interest Based Ads</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Ad Preferences</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-2">
+                    <h5 class="fw-bold">WORK WITH US</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Become an Affiliate</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Become a Reseller</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-dark">Become a Distributor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-2">
+                    <form>
+                        <h5 class="fw-bold">Let's get in touch!</h5>
+                        <p style="font-family: 'Red Hat Display', sans-serif;">For updates, offers and exciting news. </p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="subscription" class="visually-hidden">E-mail Address</label>
+                            <input id="subscription" type="text" class="form-control" placeholder="E-mail Address">
+                            <button class="btn btn-secondary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="d-flex justify-content-center mt-2 text-center">
+        <p style="font-family: 'Noto Serif', serif;">
+            All rights reserved. | AKBUGCAT
+        </p>
+    </div>
+        <!-- <div class="d-flex justify-content-center">
+        <img src="assets/images/image7.jpg" class="w-100 h-50">
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

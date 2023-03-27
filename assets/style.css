@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fasthand&family=Gruppo&family=Josefin+Sans:wght@100&family=Noto+Serif&family=Red+Hat+Display:wght@300&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Fasthand', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Red Hat Display', sans-serif; */
+
+.nav-top ul li a {
+    color: rgb(115,66,40);
+}
+.nav-top ul li a:hover {
+    text-decoration: underline;
+    color: rgb(251,124,85);
+}
+.nav-item {
+    font-family: 'Bebas Neue', cursive;
+}
+.nav-item:hover {
+    text-decoration: underline;
+    color: rgb(251,124,85);
+}
+.nav-item i:hover {
+    text-decoration: underline;
+    color: rgb(251,124,85);
+}
+.nav-sign-in i:hover {
+    color:black;
+}
+.container-fluid {
+    border-bottom: 1px solid rgb(251,124,85);
+}
+.card {
+    width: 200px;
+    height: 250px;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card-image {
+    background-color: none;
+    box-shadow: 2px 2px 1px #bbb8b8;
+}
+.card-image:hover {
+    background-color: rgb(238, 227, 227);
+}
+.card img {
+    width: 200px;
+    height: 200px;
+}
+.card-title {
+    font-size: 20px;
+    text-align: center;
+}
+.card .btn {
+    color: whitesmoke;
+    background-color: #285B53;
+    font-size: 12px;
+    border-radius: 0;
+    padding: 2px 15px 2px 15px;
+}
+.card .btn:hover {
+    background-color:  rgb(251,124,85);
+    color: whitesmoke;
+}
+.modal {
+    font-family: 'Red Hat Display', sans-serif;
+}
+.modal-content {
+    border-radius: 0px;
+    display: block;
+    background-color: #FDF2E9;
+}
+.modal-header {
+    background-image: url(images/logo-bg/leaves-bg-right.jpg);
+}
+.modal-body {
+    background-color: #FDF2E9;
+}
+.modal-dialog-scrollable {
+    height: cal (100% - var(--bs-modal-margin) * 2);
+}
+.modal-dialog-scrollable .modal-content {
+    max-height: 100%;
+    overflow: hidden;
+}
+.modal-dialog-scrollable .modal-body {
+    overflow-y: auto;
+}
+.modal img {
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+}
+.modal-text p {
+    text-align: justify;
+    margin-top: 8px;
+}
+/* .modal-footer {
+    background-image: url(images/logo-bg/leaves-bg-left.jpg);
+} */
+.nav-bottom {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: rgb(253,242,233);
+}
+.nav-sign-in i {
+    color: gray;
+}
+.nav-sign-in i:hover {
+    color: gray;
+}
+.nav-bottom ul li{
+    padding-right: 15px;
+}
+.footer-log-in .btn {
+    color: whitesmoke;
+    background-color: #285B53;
+    font-size: 12px;
+    border-radius: 0;
+    padding: 2px 15px 2px 15px;
+}
+.footer-log-in button:hover {
+    background-color:  rgb(251,124,85);
+    color: whitesmoke;
+}
+.footer {
+    font-family: 'Red Hat Display', sans-serif;
+}
+footer ul li a {
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.fw-bold {
+    font-family: 'Red Hat Display', sans-serif;
+}
+.cs-bottom p {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (max-width: 1200px) {
+    .container-fluid .col img {
+        width: 500px;
+        height: auto;
+    }
+    .section-image img {
+        width: 500px;
+        height: auto;
+    }
+    .section-text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .container-fluid .col img {
+        width: 400px;
+        height: auto;
+    }
+    .section-image img {
+        display: none;
+    }
+    .section-text {
+        font-size: 18px;
+    }
+    .nav-search .form-control {
+        font-size: 14px;
+        height: 40px;
+    }
+    .nav-search .btn {
+        font-size: 8px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+@media (max-width: 750px) {
+    .cards {
+        padding-right: 0px;
+    }
+    .card {
+        padding-right: 0px;
+    }
+
+}
+@media (max-width: 700px) {
+    .container-fluid .top-description {
+        flex-direction: column;
+    }
+    .container-fluid .col img {
+        display: none;
+    }
+    .nav a {
+        font-size: 14px;
+        padding: 2px 4px 2px 4px;
+    }
+    .cs-bottom .fw-bold {
+        font-size: 18px;
+    }
+    .cs-bottom p {
+        font-size: 14px;
+    }
+    .cs-bottom i {
+        font-size: 14px;
+    }
+    iframe {
+        width: 200px;
+        height: auto;
+        padding-left: 20px;
+    }
+    footer {
+        background-color: rgb(239,241,238);
+        border-top: 1px solid #FB7C55;
+        border-bottom: 1px solid #FB7C55;
+    }
+    footer h5 {
+        font-size: 18px;
+    }
+}
+
+
